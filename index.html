@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Nishok Jayakumar</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/nj.jpeg" type="image/x-icon" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+</style>    
+    <body>
+        
+        <!-- ----- NAV BAR ----- -->
+        
+        <div id='nav-container'>
+            <div id='nav-bar'>
+                <i onclick='navBarsBtn()' id='nav-bars' class="fa fa-bars" aria-hidden="true"></i>
+                <span><strong>Nishok Jayakumar</strong></span>
+            </div>
+
+            <div class='clear-float'></div>
+            
+            <div id='nav-aside' class='nav-aside-hide scroll'>
+                <img src='img/nj.jpeg' alt='Nishok Jayakumar' width='200px' height='223px'/>
+                <a href='#' class='nav-aside-item nav-aside-active'>
+                     <i class="fa fa-home" aria-hidden="true"></i>
+                     <span>HOME</span>
+                </a>
+                <a href='#about' class='nav-aside-item'>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>ABOUT</span>
+                </a>
+                <a href='#photos' class='nav-aside-item'>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <span>PHOTOS</span>
+                </a>
+                <a href='#contacts' class='nav-aside-item'>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>CONTACTS</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- ----- MAIN CONTENT ----- -->
+        
+        <div id='main-container'>
+            <div id='main-column'>
+                <div class='row'>
+                <div class='col-12 title'>
+                    <img width="150px" height="150px" src="img/nj.jpeg">
+                </div>
+                </div>
+                <div class='title-img'>
+                    <img src="img/nishok.jpeg" alt='man_smoke' width='992px' height='1108px' />
+
+
+
+                                
+
+
+
+
+
+
+
+
+                </div>
+            <div align="center" style="padding: 5%" id='social'>
+                <a href="https://facebook.com"><i class="fa fa-facebook-official" style="font-size:60px" aria-hidden="true"></i></a>
+                <a href="https://facebook.com"><i class="fa fa-instagram" style="font-size:60px" aria-hidden="true"></i></a>
+                <a href="https://facebook.com"><i class="fa fa-snapchat-square" style="font-size:60px" aria-hidden="true"></i></a>
+                <a href="https://facebook.com"><i class="fa fa-twitter" style="font-size:60px" aria-hidden="true"></i></a>
+                <a href="https://facebook.com"><i class="fa fa-linkedin" style="font-size:60px" aria-hidden="true"></i></a>
+            </div>
+                <!-- ----- ABOUT ----- -->
+                
+                <div class='row'>
+                    <div class='col-12'>
+                        <div class='anchor' id='about'></div>
+                        <div class='about'>
+                            <h1>Nishok Jayakumar</h1>
+                            <hr />
+                            <p>I am nomadic by nature and travel continuously the entire year. Most of my journeys are long, solo treks deep into the
+                            wilderness. I'm inspired by new landscapes. Every photograph is a fusion of my Creative vision with a personal
+                            experience that will never happen again..</p>
+                        </div>
+                    </div>
+                </div>  
+    
+                <!-- ----- MY PHOTO ----- -->
+                
+                <div class='anchor' id='photos'></div>
+                <div class='padding-l-24'>
+                    <h1>My Photos</h1>
+                    <hr />
+                </div>
+                <div class='row my-photo'>
+                    <div class='col-6 photo-col'>
+                        <!-- <img src="img/1.jpeg" alt='wedding' width='800px' height='500px' />
+                        <img src="img/3.jpeg" alt='rocks' width='500px' height='850px' />
+                        <img src="img/2.jpeg" alt='sailboat' width='2500px' height='1665px' /> -->
+
+                        <img src="img/1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt='wedding' width='800px' height='500px' />
+                        <img src="img/3.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt='rocks' width='500px' height='850px' />
+                        <img src="img/2.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt='sailboat' width='2500px' height='1665px' />
+
+
+
+                    </div>
+                    <div class='col-6 photo-col'>
+                        <img src='http://viblaze.co.uk/MyFolder/MyWorks/PortfolioPhoto/underwater.jpg' alt='underwater' width='800px' height='800px' />
+                        <img src='http://viblaze.co.uk/MyFolder/MyWorks/PortfolioPhoto/chef.jpg' alt='chef' width='800px' height='553px' />
+                        <img src='http://viblaze.co.uk/MyFolder/MyWorks/PortfolioPhoto/wedding.jpg' alt='wedding' width='800px' height='500px' />
+                        <img src='http://viblaze.co.uk/MyFolder/MyWorks/PortfolioPhoto/p6.jpg' alt='typing_machine' width='400px' height='300px' />
+                    </div>
+                </div>
+             
+
+
+
+
+                
+                <!-- ----- CONTACT ME ----- -->
+                
+                <div class='row' style="background:lightgrey">
+                    <div class='col-12 contacts'>
+                        <div class='anchor' id='contacts'></div>
+                        <h1>Contact Me</h1>
+                        <hr />
+                        <ul>
+                            <li>
+                                <div>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                </div>
+                                Coimbatore, Tamilnadu, India
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                </div>
+                                Phone: 91 74183 36181
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                Email: nishoknish@gmail.com
+                            </li>
+                        </ul>
+                        <!-- <p style='margin-top: 40px;'>Let's get in touch. Send me a message:</p>               
+                        <form>
+                            <input type='text' name='name' placeholder='Name' />
+                            <input type='email' name='email' placeholder='E-mail' />
+                            <input type='text' name='subject' placeholder='Subject' />
+                            <input type='text' name='message' placeholder='Message' />
+                            <button type='button'><i class="fa fa-paper-plane" aria-hidden="true"></i> SEND MESSAGE</button>
+                        </form>           -->
+                    </div>
+                </div>
+                    
+                <!-- ----- FOOTER ----- -->
+                
+                <div class='row footer'>
+                    <!-- <div class='col-12'>
+                        <div id='social'>
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </div> -->
+                        <!-- <div id='footer-text'>
+                            <p>Developed by <a href=''' target='_blank'></a>.</p>
+                            <p>Design tamplate from <a href='https://w3schools.com' target='_blank'>www.w3schools.com</a></p>
+                        </div> -->
+                        
+                    </div>
+                </div>
+                
+            </div><!-- main wrap -->            
+        </div><!-- main container -->
+
+<script  src="js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal1">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/1.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/2.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/3.jpeg" style="width:100%">
+        </div>
+
+
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <!-- <div class="column">
+            <img class="demo" src="img/1.jpeg" onclick="currentSlide(1)" alt="Nature">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="img/2.jpeg" onclick="currentSlide(2)" alt="Snow">
+        </div>
+
+        <div class="column">
+            <img class="demo" src="img/3.jpeg" onclick="currentSlide(3)" alt="Mountains">
+        </div> -->
+
+      
+    </div>
+</div>
+<style>
+    /* The Modal (background) */
+.modal1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<script>
+    // Open the Modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
+</body>
+
+</html>
